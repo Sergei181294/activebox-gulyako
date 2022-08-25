@@ -1,0 +1,22 @@
+@import "blocks/header";
+@import "blocks/section";
+@import "blocks/scientists";
+@import "blocks/integer";
+@import "blocks/offer";
+@import "blocks/information";
+@import "blocks/footer";
+@import "blocks/fenshui";
+body{
+  margin: 0;
+}
+.container {
+margin: 0 auto;
+  padding: 0;
+  max-width: 1170px;
+}
+a{
+  text-decoration: none;
+}
+button{
+ cursor:pointer;
+}

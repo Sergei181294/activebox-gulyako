@@ -1,0 +1,60 @@
+.fenshui{
+  margin:0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+
+}
+.list-work{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  max-width: 1528px;
+  img{
+    width: 348px;
+    height: 340px;
+  }
+  &__image{
+    display: flex;
+    border: 2px solid #ffffff;
+    position: relative;
+    &:hover .list-work__text{
+      display: flex;
+      background-color:  rgba(255, 67, 67, 0.8);
+    }
+    &:active{
+      background: rgba(185, 12, 12, 0.8);
+    }
+  }
+}
+.list-work__text{
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100%;
+  min-height: 100%;
+  justify-content: center;
+  display: none;
+  &--title{
+    font-family:Raleway, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    padding: 10px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  &--link{
+    font-family: Raleway, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+    margin-top: 5px;
+    padding: 10px;
+    color: #FFFFFF;
+  }
+}

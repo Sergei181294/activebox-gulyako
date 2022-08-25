@@ -1,0 +1,29 @@
+.offer{
+  font-family: Raleway, Arial, sans-serif;
+  text-align: center;
+  padding-top: 160px;
+  padding-bottom: 115px;
+  &__title{
+    font-weight: 500;
+    font-size: 30px;
+    margin: 0;
+  }
+  &__subtitle{
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 20px auto 0;
+  }
+  &__submit{
+    min-width: 370px;
+    background-color: #FF4343;
+    padding: 25px;
+    color:white;
+    font-size: 24px;
+    font-weight: 900;
+    border:none;
+    text-transform: uppercase;
+    display: block;
+    margin:50px auto 0;
+  }
+}
