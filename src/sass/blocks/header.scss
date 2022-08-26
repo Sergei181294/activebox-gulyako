@@ -6,12 +6,11 @@
   padding-bottom: 240px;
 h1{
   font-family: Raleway, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 64px;
   text-align: center;
   color: white;
   text-transform: uppercase;
-  max-width: 1170px;
   margin: 130px auto 0;
 }
   p{
@@ -20,7 +19,6 @@ h1{
     font-size: 24px;
     color:white;
     text-align: center;
-    max-width: 1170px;
     margin: 30px auto 0;
   }
   button{
@@ -44,7 +42,7 @@ h1{
   a{
     color:white;
     display: block;
-    padding: 40px;
+    padding: 40px 30px;
   }
 }
 .loft {
@@ -56,7 +54,6 @@ h1{
     list-style: none;
     display: flex;
     text-transform: uppercase;
-    gap:30px;
     margin: 0;
     padding: 0;
   }
@@ -78,6 +75,49 @@ h1{
 .menu__nav:hover {
     border-bottom: 3px solid white;
 }
+@media (max-width:1510px){
+  .header {
+
+    h1 {
+      font-size: 48px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    button {
+      min-width: 314px;
+    }
+
+    li {
+      font-size: 12px;
+    }
+  }}
+@media(max-width: 1024px) {
+  .header{
+    h1{
+      font-size: 36px;
+    }
+  }
+
+  .loft {
+    display: block;
+    padding: 15px;
+
+    &__menu {
+      flex-direction: column;
+      align-items: center;
+    }
+  &:after{
+    display: none;
+  }
+  }
+}
+
+
+
+
 
 
 
