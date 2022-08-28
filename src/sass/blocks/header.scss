@@ -96,8 +96,17 @@ h1{
   }}
 @media(max-width: 1024px) {
   .header{
+    padding-bottom: 50px;
     h1{
       font-size: 36px;
+      margin-top: 30px;
+    }
+  p{
+    font-size: 14px;
+  }
+    button{
+      min-width: 280px;
+      margin-top: 50px;
     }
   }
 

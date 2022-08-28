@@ -9,7 +9,7 @@
   padding: 120px 0 0;
   &__block{
     max-width: 370px;
-  }
+
   img{
     display: block;
     margin: 0 auto;
@@ -19,7 +19,7 @@
   h2{
     font-family: Raleway, Arial, sans-serif;
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 900;
     text-align: center;
     margin:40px 0 0;
     padding: 10px;
@@ -32,8 +32,39 @@ p{
   padding: 10px;
   text-align: center;
   color: #6C7279;
-
-
+  margin: 40px 0 0;
 }
-
+  }
+}
+@media(max-width: 1510px){
+  .list{
+    gap:23px;
+  }
+  .list__block{
+    max-width: 315px;
+    img{
+      width: 54px;
+      height: 54px;
+    }
+    h2{
+      font-size: 18px;
+    }
+    p{
+      font-size: 14px;
+    }
+  }
+}
+@media(max-width: 1024px){
+  .list__block{
+    img{
+      width: 47px;
+      height: 47px;
+    }
+    h2{
+      font-size: 18px;
+    }
+    p{
+      font-size: 14px;
+    }
+  }
 }

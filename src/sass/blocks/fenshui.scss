@@ -1,60 +1,71 @@
 .fenshui{
-  margin:0 auto;
-  display: flex;
-  justify-content: center;
-  padding: 100px 0;
-
+  padding: 100px 0 0;
 }
 .list-work{
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  justify-content: center;
-  max-width: 1528px;
-  img{
-    width: 348px;
-    height: 340px;
-  }
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   &__image{
-    display: flex;
-    border: 2px solid #ffffff;
+    object-fit: cover;
     position: relative;
-    &:hover .list-work__text{
-      display: flex;
-      background-color:  rgba(255, 67, 67, 0.8);
+    display: flex;
+    margin: 0;
+    img{
+      margin: 0;
+      height: 100%;
+      width: 100%;
     }
-    &:active{
-      background: rgba(185, 12, 12, 0.8);
+  }
+  &__text{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    min-height: 100%;
+&--title{
+  text-transform: uppercase;
+  color: white;
+  font-size: 24px;
+  font-family: Raleway, Arial, sans-serif;
+  font-weight: 900;
+}
+    &--link{
+      color: white;
+      font-size: 18px;
+      font-family: Raleway, Arial, sans-serif;
+      font-weight: 400;
     }
   }
 }
-.list-work__text{
+.list-work__image:hover .list-work__text{
+  display: flex;
   position: absolute;
-  flex-direction: column;
-  align-items: center;
-  min-width: 100%;
-  min-height: 100%;
-  justify-content: center;
-  display: none;
-  &--title{
-    font-family:Raleway, Arial, sans-serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 24px;
-    padding: 10px;
-    text-transform: uppercase;
-    color: #FFFFFF;
+  background-color: #FF4343;
+  opacity: 0.7;
+}
+@media (max-width:1510px){
+  .fenshui{
+    padding: 70px 0;
   }
-  &--link{
-    font-family: Raleway, Arial, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    text-decoration: none;
-    margin-top: 5px;
-    padding: 10px;
-    color: #FFFFFF;
+.list-work__text--title{
+  font-size: 18px;
+}
+  .list-work__text--link{
+    font-size: 14px;
   }
 }
+@media (max-width: 1024px){
+  .fenshui{
+    padding: 30px 0;
+  }
+  .list-work{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+}
+
+
+

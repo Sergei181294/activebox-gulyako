@@ -1,33 +1,52 @@
 .integer{
-  background-image: url("../img/integer/Group 7.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.setting{
+  background-color: #5c3249;
   display: flex;
   justify-content: space-between;
-  flex-direction: row-reverse;
-  padding-top: 70px;
+  img{
+    height: 100%;
+  }
 }
+
 .metodic{
-  max-width: 330px;
+  max-width: 470px;
   color: white;
   padding:200px 50px;
   &__content{
     font-family: Cardo, Arial, sans-serif;
-    font-size: 24px;
+    font-size: 36px;
     font-weight: normal;
     margin: 0;
   }
   &__description{
     text-transform: uppercase;
     font-family: Raleway, Arial, sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
     margin: 15px auto 0;
   }
 }
-.hidden{
-  opacity:0;
+@media(max-width: 1510px){
+  .setting{
+    img{
+      max-width: 502px;
+      max-height: 100%;
+    }
+  }
+  .metodic{
+    max-width: 330px;
+    margin:0 auto;
+    padding: 80px 50px;
+    &__content{
+      font-size: 24px;
+    }
+    &__description{
+      font-size: 12px;
+    }
+  }
 }
+@media(max-width: 1024px){
+  .integer{
+    flex-direction: column;
+  }
+}
+
