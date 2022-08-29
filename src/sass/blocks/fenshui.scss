@@ -1,5 +1,5 @@
 .fenshui{
-  padding: 100px 0 0;
+  padding-top: 134px;
 }
 .list-work{
   display: grid;
@@ -44,6 +44,7 @@
   position: absolute;
   background-color: #FF4343;
   opacity: 0.7;
+  gap:40px;
 }
 @media (max-width:1510px){
   .fenshui{

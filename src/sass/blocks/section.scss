@@ -5,23 +5,23 @@
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
-  gap:30px;
-  padding: 120px 0 0;
+  gap:100px 30px;
+  padding: 128px 0 0;
   &__block{
     max-width: 370px;
 
   img{
     display: block;
     margin: 0 auto;
-    width: 63px;
-    height: 63px;
+    width: 75.7px;
+    height: 75.7px;
   }
   h2{
     font-family: Raleway, Arial, sans-serif;
     font-size: 24px;
     font-weight: 900;
     text-align: center;
-    margin:40px 0 0;
+    margin:51px 0 0;
     padding: 10px;
     text-transform: uppercase;
   }
@@ -29,10 +29,9 @@ p{
   font-family: Raleway, Arial, sans-serif;
   font-weight: normal;
   font-size: 18px;
-  padding: 10px;
   text-align: center;
   color: #6C7279;
-  margin: 40px 0 0;
+  margin: 35px 0 0;
 }
   }
 }
