@@ -1,0 +1,134 @@
+.header{
+  background-image: url("../img/Group 4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 120px;
+h1{
+  font-family: Raleway, Arial, sans-serif;
+  font-weight: 900;
+  font-size: 64px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  margin: 132px auto 0;
+}
+  p{
+    font-family: Raleway, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    color:white;
+    text-align: center;
+    margin: 30px auto 0;
+    max-width: 1030px;
+  }
+  button{
+    min-width: 370px;
+    background-color: #FF4343;
+    padding: 25px;
+    color:white;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    border:none;
+    text-transform: uppercase;
+    display: block;
+    margin:80px auto 0;
+  }
+  li{
+    font-weight: bold;
+    font-size: 12px;
+    font-family: Raleway, Arial, sans-serif;
+  }
+  a{
+    color:white;
+    display: block;
+    padding: 42px 34px;
+  }
+}
+.loft {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  &__menu {
+    list-style: none;
+    display: flex;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+  }
+  &__logo{
+    width: 180.85px;
+    height: 25px;
+    align-self: center;
+  }
+  &:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color:#BABBC5;
+    top: 100px;
+  }
+}
+
+.menu__nav:hover {
+    border-bottom: 3px solid white;
+}
+@media (max-width:1510px){
+  .header {
+
+    h1 {
+      font-size: 48px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    button {
+      min-width: 314px;
+    }
+
+    li {
+      font-size: 12px;
+    }
+  }}
+@media(max-width: 1024px) {
+  .header{
+    padding-bottom: 50px;
+    h1{
+      font-size: 36px;
+      margin-top: 30px;
+    }
+  p{
+    font-size: 14px;
+  }
+    button{
+      min-width: 280px;
+      margin-top: 50px;
+    }
+  }
+
+  .loft {
+    display: block;
+    padding: 15px;
+
+    &__menu {
+      flex-direction: column;
+      align-items: center;
+    }
+  &:after{
+    display: none;
+  }
+  }
+}
+
+
+
+
+
+
+
+
