@@ -1,5 +1,5 @@
 .scientists{
-  padding: 111px 0;
+  padding-bottom:114px;
 }
 .worker{
   list-style: none;
@@ -56,22 +56,28 @@
 
 }
 @media(max-width: 1510px){
+  .scientists{
+    padding-bottom: 70px;
+  }
   .worker{
+    gap:26px;
+
   &__one{
     max-width: 227px;
   }
     &__title{
       font-size: 18px;
-      margin-top: 25px;
+      margin-top: 22px;
     }
     &__job{
-      margin-top: 10px;
+      margin-top:7px;
       font-size: 14px;
     }
     &__subtitle{
-      margin-top: 20px;
+      margin-top: 23px;
       font-size: 14px;
     }
+
   }
 }
 .link-wrap{

@@ -8,7 +8,6 @@
 @import "blocks/fenshui";
 body{
   margin: 0 auto;
-  max-width: 1510px;
 
 }
 .container {
@@ -28,6 +27,6 @@ button{
 }
 @media(max-width: 1024px){
   .container{
-    max-width:288px;
+    max-width: 288px;
   }
 }

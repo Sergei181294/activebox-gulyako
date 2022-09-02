@@ -25,22 +25,34 @@
     border:none;
     text-transform: uppercase;
     display: block;
-    margin:50px auto 0;
+    margin:47px auto 0;
+
+    &:hover{
+      background-color: #e71414;
+      transition-duration: 5s;
+    }
+    &:active{
+      background-color: #FF4343;
+      box-shadow: 4px 4px 30px #FF4343;
+    }
   }
 }
 @media(max-width: 1510px){
   .offer{
-    padding-top: 90px;
-    padding-bottom: 80px;
+    padding-top: 123px;
+    padding-bottom: 78px;
     &__title{
       font-size: 24px;
     }
     &__subtitle{
       font-size: 14px;
+      margin-top: 20px;
     }
     &__submit{
       min-width: 310px;
       font-size: 18px;
+      margin-top: 43px;
+      padding:30px;
     }
   }
 }

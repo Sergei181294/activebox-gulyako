@@ -40,16 +40,43 @@
 .net{
   justify-content: space-between;
 }
+@media(max-width: 1510px){
+  .information{
+    padding-top: 47px;
+    padding-bottom: 29px;
+  }
+  .contacts{
+    gap:70px;
+    max-width:946px;
+    margin: 0 auto;
+    &__about {
+      max-width: 315px;
+
+      h2 {
+        font-size: 14px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
 @media(max-width: 1024px){
+  .information{
+  }
+
   .contacts{
     flex-direction: column;
     gap:70px;
-    &__about{
-      max-width: 315px;
-      h2{
+    margin: 0 auto;
+    &__about {
+
+      h2 {
         font-size: 14px;
       }
-      p{
+
+      p {
         font-size: 14px;
       }
     }

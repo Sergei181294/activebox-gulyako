@@ -1,5 +1,6 @@
 .fenshui{
-  padding-top: 134px;
+  padding-top: 132px;
+  padding-bottom: 111px;
 }
 .list-work{
   display: grid;
@@ -24,12 +25,14 @@
     justify-content: center;
     min-width: 100%;
     min-height: 100%;
+    gap:35px;
 &--title{
   text-transform: uppercase;
   color: white;
   font-size: 24px;
   font-family: Raleway, Arial, sans-serif;
   font-weight: 900;
+  margin:-11px 0 0;
 }
     &--link{
       color: white;
@@ -46,16 +49,28 @@
   opacity: 0.7;
   gap:40px;
 }
+.list-work__image:active .list-work__text{
+  background: rgba(185, 12, 12, 0.8);
+}
+
 @media (max-width:1510px){
   .fenshui{
-    padding: 70px 0;
+    padding-top: 79px;
+    padding-bottom: 77px;
   }
+  .list-work__image:hover .list-work__text{
+    gap:24px;
+  }
+  .list-work{
+    margin: 0 auto;
+
 .list-work__text--title{
   font-size: 18px;
+  margin:0;
 }
   .list-work__text--link{
     font-size: 14px;
-  }
+  }}
 }
 @media (max-width: 1024px){
   .fenshui{
@@ -65,6 +80,11 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
+    width: 320px;
+    &__image{
+     width: 160px;
+      height: 144px;
+    }
 }
 }
 

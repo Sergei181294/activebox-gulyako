@@ -1,4 +1,6 @@
 .integer{
+  max-width: 1510px;
+  margin:0 auto;
   background-color: #5c3249;
   display: flex;
   justify-content: space-between;
@@ -28,6 +30,10 @@
   }
 }
 @media(max-width: 1510px){
+  .integer{
+    max-width: 1024px;
+    margin: 0 auto;
+  }
   .setting{
     img{
       max-width: 502px;
@@ -36,19 +42,31 @@
   }
   .metodic{
     max-width: 330px;
-    margin:0 auto;
-    padding: 80px 50px;
+    margin:0 105px 56px 0;
+
     &__content{
       font-size: 24px;
     }
     &__description{
       font-size: 12px;
+      margin-top: 15px;
     }
   }
 }
 @media(max-width: 1024px){
   .integer{
     flex-direction: column;
+    max-width: 502px;
+    img{
+      max-width: 100%;
+    }
+  }
+  .metodic{
+    max-width: 275px;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 100px;
+    padding-top: 30px;
   }
 }
 
